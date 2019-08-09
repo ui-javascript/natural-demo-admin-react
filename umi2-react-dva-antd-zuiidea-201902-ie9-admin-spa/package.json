@@ -99,6 +99,7 @@
     }
   },
   "scripts": {
+    "install:tyarn": "tyarn install",
     "install:cnpm": "cnpm install",
     "remove": "rimraf node_modules",
     "analyze": "cross-env ANALYZE=1 umi build",
