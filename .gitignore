@@ -119,7 +119,5 @@ dependency-reduced-pom.xml
 ### 自定义 ###
 rebel.xml
 __tmp
-upload
-uploads
 out
 .umi/
