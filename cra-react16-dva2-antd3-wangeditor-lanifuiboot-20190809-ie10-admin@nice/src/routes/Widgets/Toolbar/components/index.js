@@ -28,7 +28,7 @@ export default class extends BaseComponent {
       <Layout className="full-layout page toolbar-page">
         <Content>
           <Panel title="基本用法">
-            <Toolbar 
+            <Toolbar
               className="toolbar-demo"
               appendLeft={
                 <Button.Group>
@@ -39,7 +39,7 @@ export default class extends BaseComponent {
             />
           </Panel>
           <Panel title="组合SearchBar">
-            <Toolbar 
+            <Toolbar
               className="toolbar-demo"
               appendLeft={
                 <Button.Group>
@@ -52,7 +52,7 @@ export default class extends BaseComponent {
             </Toolbar>
           </Panel>
           <Panel title="组合SearchBar，并可下拉展示更多">
-            <Toolbar 
+            <Toolbar
               className="toolbar-demo"
               appendLeft={
                 <Button.Group>

@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import Icon from '../Icon';
-import { Popover, Badge, Avatar } from 'antd';
+import { Popover, Badge, Avatar, Icon as AntdIcon } from 'antd';
 import { Link } from 'dva/router';
 import cx from 'classnames';
 import './style/index.less';
@@ -155,7 +155,7 @@ class NavBar extends PureComponent {
           <li className="dropdown">
             <Popover
               placement="bottomRight"
-              title={`WELCOME ${user.userName}`}
+              title={`欢迎你！${user.userName}`}
               overlayClassName={cx('navbar-popup', { [theme]: !!theme })}
               content={<UserDropDown />}
               trigger="click"
@@ -178,18 +178,18 @@ class NavBar extends PureComponent {
 
 const UserDropDown = props => (
   <ul className="dropdown-menu list-group dropdown-persist">
-    <li className="list-group-item">
-      <a className="animated animated-short fadeInUp">
-        <Icon type="mail" /> 信息
-        <Badge count={5} className="label" />
-      </a>
-    </li>
-    <li className="list-group-item">
-      <a className="animated animated-short fadeInUp">
-        <Icon type="users" /> 好友
-        <Badge count={6} className="label" />
-      </a>
-    </li>
+    {/*<li className="list-group-item">*/}
+    {/*  <a className="animated animated-short fadeInUp">*/}
+    {/*    <Icon type="mail" /> 信息*/}
+    {/*    <Badge count={5} className="label" />*/}
+    {/*  </a>*/}
+    {/*</li>*/}
+    {/*<li className="list-group-item">*/}
+    {/*  <a className="animated animated-short fadeInUp">*/}
+    {/*    <Icon type="users" /> 好友*/}
+    {/*    <Badge count={6} className="label" />*/}
+    {/*  </a>*/}
+    {/*</li>*/}
     <li className="list-group-item">
       <a className="animated animated-short fadeInUp">
         <Icon type="gear" /> 帐户设置
@@ -197,9 +197,14 @@ const UserDropDown = props => (
     </li>
     <li className="list-group-item">
       <a className="animated animated-short fadeInUp">
-        <Icon type="ring" /> 通知
+        <AntdIcon type="eye" /> 修改密码
       </a>
     </li>
+    {/*<li className="list-group-item">*/}
+    {/*  <a className="animated animated-short fadeInUp">*/}
+    {/*    <Icon type="ring" /> 通知*/}
+    {/*  </a>*/}
+    {/*</li>*/}
     <li className="list-group-item dropdown-footer">
       <Link to="/sign/login">
         <Icon type="poweroff" /> 退出
